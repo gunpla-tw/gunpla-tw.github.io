@@ -136,7 +136,7 @@ a:visited { color: #a0a; }
 }
 .hero .bg-back {
   z-index: -2;
-  background: url(/images/sinanju_bg.png);
+  background: url(/images/zaku.jpg);
   background-size: cover;
   opacity: 0.5
 }
