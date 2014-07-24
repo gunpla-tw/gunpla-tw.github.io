@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        {% stylesheet syntax %}
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/media.css">
-
+        {% stylesheet main %}
+        {% stylesheet media %}
+        {% stylesheet app %}
     </head>
     <body>
 
@@ -38,5 +38,6 @@
           </div>
         </div>
 
+    {% javascript app %}
     </body>
 </html>
