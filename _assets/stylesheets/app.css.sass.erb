@@ -2,6 +2,7 @@
 
 body
   background: #fef9ec
+  height: 100%
 
 .header
   +clearfix
@@ -40,7 +41,6 @@ body
       display: inline-block
 
 .site
-  min-height: 100%
   background: #FEF9EC
 
 .hero
@@ -54,8 +54,10 @@ body
   box-shadow: 0 1px 5px rgba(0,0,0, 0.7)
   width: 100%
   box-sizing: border-box
-  height: 450px
+  height: 500px
   z-index: 2
+  h1, h3
+    opacity: 0.7
   h1
     font-size: 42px
     text-shadow: 0 2px 5px rgba(0,0,0, .8)
@@ -74,7 +76,7 @@ body
 
   .bg-back
     z-index: -2
-    background: url(<%= asset_path 'zaku.jpg' %>)
+    background: url(<%= asset_path 'zaku.jpg' %>) #000 no-repeat
     background-size: cover
     background-attachment: fixed
     background-position: 0 -100px
