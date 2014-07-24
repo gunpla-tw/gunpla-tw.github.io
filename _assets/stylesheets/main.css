@@ -10,13 +10,13 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html { height: 100%; }
 
 body {
   background-color: #FFF;
   font-size: small;
   text-align: center;
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Titillium Web", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-wrap: normal;
   word-wrap: break-word;
 }
@@ -59,28 +59,14 @@ a:visited { color: #a0a; }
 
 .site {
   font-size: 115%;
-  margin: 0 auto 2em;
+  margin: 0 auto;
   line-height: 1.5em;
-  height: 100%;
   position: relative;
-}
-
-.header a {
-  font-weight: bold;
-  text-decoration: none;
 }
 
 .title {
   display: inline-block;
   margin-bottom: 2em;
-}
-
-.title a {
-  color: #a00;
-}
-
-.title a:hover {
-  color: #000;
 }
 
 .header a.extra {

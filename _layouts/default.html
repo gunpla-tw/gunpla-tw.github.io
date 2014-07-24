@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
-
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,200italic,300italic' rel='stylesheet' type='text/css'>
         <!-- syntax highlighting CSS -->
         {% stylesheet syntax %}
 
@@ -15,24 +15,22 @@
         {% stylesheet app %}
     </head>
     <body>
-
+        <div class="header">
+          <!--<ul class="menu">-->
+            <!--<li>-->
+              <!--<a class="extra" href="#">Post</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        </div>
         <div class="site">
-          <!--<div class="header">-->
-            <!--[><h1 class="title"><a href="/">{{ site.name }}</a></h1><]-->
-            <!--[><a class="extra" href="/">home</a><]-->
-          <!--</div>-->
 
           {{ content }}
 
           <div class="footer">
             <div class="contact">
               <p>
-                tw.gunpla.club<br />
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/gunpla-tw">https://github.com/gunpla-tw</a><br />
+                © 2014 <a href="http://tw.gunpla.club">tw.gunpla.club</a><br />
               </p>
             </div>
           </div>

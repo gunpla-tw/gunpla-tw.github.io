@@ -1,13 +1,61 @@
 @import "bourbon"
 
+body
+  background: #fef9ec
+
+.header
+  +clearfix
+  position: relative
+  text-align: left
+  padding: 0 35px
+  background: #5B5E63
+  font-size: 24px
+  margin-bottom: -3px
+  .title
+    margin: 0
+    padding: 10px 15px
+    background: #07ABD4
+    font-style: normal
+    font-weight: 200
+    a
+      color: white
+      text-decoration: none
+      text-shadow: 0px 2px 2px rgba(0,0,0, .7)
+      &:hover
+        color: #4C7285
+  &:before
+    position: absolute
+    content: ' '
+    display: block
+    height: 3px
+    width: 100%
+    left: 0
+    top: 100%
+    +background(linear-gradient(rgba(0,0,0, .3), rgba(0,0,0, .1)))
+  ul.menu
+    float: right
+    margin-right: 120px
+    li
+      padding: 10px 0
+      display: inline-block
+
+.site
+  min-height: 100%
+  background: #FEF9EC
+
 .hero
   display: inline-block
+  text-align: left
   color: #fff
-  background: rgba(0,0,0, 0.5)
-  padding: 70px 100px 80px
+  background: rgba(0,0,0, 0.3)
+  padding: 70px 35px 80px
   vertical-align: middle
   position: relative
   box-shadow: 0 1px 5px rgba(0,0,0, 0.7)
+  width: 100%
+  box-sizing: border-box
+  height: 450px
+  z-index: 2
   h1
     font-size: 42px
     text-shadow: 0 2px 5px rgba(0,0,0, .8)
@@ -21,18 +69,10 @@
     left: 0
   .bg-front
     z-index: -1
-    background: rgba(50,50,50, .3)
+    background: rgba(0,0,0, .6)
 
   .bg-back
     z-index: -2
     background: url(<%= asset_path 'zaku.jpg' %>)
     background-size: cover
-    opacity: 0.5
-
-.site
-  &:before
-    content: " "
-    display: inline-block
-    height: 85%
-    vertical-align: middle
 
