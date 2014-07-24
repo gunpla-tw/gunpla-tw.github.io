@@ -3,7 +3,7 @@
 
 do ->
   textEffectOptions =
-    fps: 60
+    fps: 30
     possibleChar: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
   $heroH1 = $('.hero h1')
